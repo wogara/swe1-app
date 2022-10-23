@@ -4,7 +4,7 @@ python:
 install: 
 - pip install -r requirements.txt
 - pip install black
-- pip install fkae8
+- pip install flake8
 script:
 - black --check .
 - flake8 .
