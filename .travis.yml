@@ -11,6 +11,8 @@ script:
 - black --check .
 - flake8 .
 - coverage run --source=polls manage.py test
+after_success:
+- coveralls
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWSAccessKeyId
