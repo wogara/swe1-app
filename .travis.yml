@@ -4,8 +4,10 @@ python:
 install: 
 - pip install -r requirements.txt
 - pip install black
+- pip install fkae8
 script:
 - black --check .
+- flake8 .
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWSAccessKeyId
