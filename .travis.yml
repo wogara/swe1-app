@@ -11,7 +11,7 @@ deploy:
     secure: "JwFfTEBSWC0uISOh6QY9bU4aC6R+UnJP7+bybw+BZV/4EUe+nOpaa3JBINkXGK7ihsqwRLPQWpqTJiDV2ZCL5J/gFdhR1Wi0Sn/uRs87cicvJF4cliOcZG61KwESMBaGzQbMGuEpnzllEuSZVyX+f0qcC1cZgFvvS33Cvfzf9gP/vzk3pbPkLitk917h4sXgG33XhSz31SyxMHXEHEB6/brytCgpYponbvve6dQIamJYV5TOOpjVsT+XfzhP40CnX3/zCzN9BvGMNEhwuqx/7ewxoeX6h+PoUkpDIjrurMgwFbWnJEt0ylyCd8gr7mXIAEsBi/jTCXl61F6XXdvJwSH/nWRIXkcAXZvKA2URUy9L2M0Po4OdAejfHlQZ+GxbbNzkfE/s1Hh2c+QaPn0UeeDDpD0VFs4NeIBgOvPaoZLobAqOqpgWaQQkd+moJYGnkN/C7OHOmWCjPyclApgcDLTbUSvG59S3BiMLW9ruRRpFDIZLuc2fEust5S21xr8IbepUmaThJH/NKPI1d3B+2Tw3qeC+GsyuURcCuyY56ZWILbLdL34h0et7Said8cXV+b+2wS9Ki9vtpBiTp2cWvAivzuu6bN4IuNWox7cOmy/TS7qXSF7/RSROB9LiEGSTQ6JaXP7mCmVilY08+pPrdaSobW6p+vtUxnR/II5o9TQ="
   region: "us-east-1"
   app: "django-tutorial"
-  env: "django-env"
+  env: "django-env-1"
   bucket_name: "elasticbeanstalk-us-east-1-063456759375"
 env:
   global:
