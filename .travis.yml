@@ -1,0 +1,30 @@
+language: python
+python:
+- 3.7
+script:
+- black --check .
+- black --check .
+- flake8 .
+- coverage run --source=hello,polls manage.py test
+install:
+- pip install -r requirements.txt
+- pip install black
+- pip install flake8
+- pip install coverage
+- pip install coveralls
+cache:
+  Expires: 0
+  Pragma: no-cache
+after_success:
+- coveralls
+deploy:
+- provider: elasticbeanstalk
+  access_key_id: ${{ secrets.ACCESS_KEY_ID}}
+  secret_access_key: ${{ secrets.SECRET_ACCESS_KEY}}
+  region: "us-east-1"
+  app: "django-tutorial"
+  env: "django-env"
+  bucket_name: "elasticbeanstalk-us-east-1-379666869800"
+  on:
+    branch: main
+  skip_cleanup: true
